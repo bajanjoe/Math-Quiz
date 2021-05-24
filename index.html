@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="containeer">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+
+                        <header class="card-header">
+                            <p class="card-header-title">Math Quiz</p>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="content">
+                                <h1 class="subtitle">
+                                    <span id="subtitle">How much is</span>
+                                    <span id="numOneDisplay">0</span>
+                                    <span id="symbol">+</span>
+                                    <span id="numTwoDisplay">0</span>
+                                    <span id="questionMark">?</span> 
+
+                                </h1>
+                                <input class="input is-primary is-rounded is-large" type="number" id="solution"
+                                    name="answer" placeholder="Enter you answer here.">
+                                <br> <span class="content subtitle" id="solutionDisplay"></span>
+                            </div>
+                        </div>
+
+                        <footer class="card-footer">
+                            <div class="field is-grouped mb-3">
+                                <button id="submit" onclick="sum()" class="button is-info mt-3">Submit</button>
+                                <button id="next" onclick="results()" class="button is-info mt-3 ml-3">Finish</button>
+                            </div>
+                        </footer>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
